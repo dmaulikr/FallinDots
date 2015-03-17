@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42564C7E1AB7BB7900728D86 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42564C7D1AB7BB7900728D86 /* Dot.swift */; };
 		42D8A4B11AB38FB30040F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D8A4B01AB38FB30040F9C4 /* AppDelegate.swift */; };
 		42D8A4B31AB38FB30040F9C4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 42D8A4B21AB38FB30040F9C4 /* GameScene.sks */; };
 		42D8A4B51AB38FB30040F9C4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D8A4B41AB38FB30040F9C4 /* GameScene.swift */; };
@@ -14,20 +15,10 @@
 		42D8A4BA1AB38FB30040F9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D8A4B81AB38FB30040F9C4 /* Main.storyboard */; };
 		42D8A4BC1AB38FB30040F9C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D8A4BB1AB38FB30040F9C4 /* Images.xcassets */; };
 		42D8A4BF1AB38FB30040F9C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D8A4BD1AB38FB30040F9C4 /* LaunchScreen.xib */; };
-		42D8A4CB1AB38FB30040F9C4 /* FallinDots2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D8A4CA1AB38FB30040F9C4 /* FallinDots2Tests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		42D8A4C51AB38FB30040F9C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42D8A4A31AB38FB30040F9C4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42D8A4AA1AB38FB30040F9C4;
-			remoteInfo = FallinDots2;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		42564C7D1AB7BB7900728D86 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
 		42D8A4AB1AB38FB30040F9C4 /* FallinDots2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallinDots2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D8A4AF1AB38FB30040F9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D8A4B01AB38FB30040F9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,20 +28,10 @@
 		42D8A4B91AB38FB30040F9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D8A4BB1AB38FB30040F9C4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42D8A4BE1AB38FB30040F9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		42D8A4C41AB38FB30040F9C4 /* FallinDots2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallinDots2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D8A4C91AB38FB30040F9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42D8A4CA1AB38FB30040F9C4 /* FallinDots2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallinDots2Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42D8A4A81AB38FB30040F9C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D8A4C11AB38FB30040F9C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				42D8A4AD1AB38FB30040F9C4 /* FallinDots2 */,
-				42D8A4C71AB38FB30040F9C4 /* FallinDots2Tests */,
 				42D8A4AC1AB38FB30040F9C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				42D8A4AB1AB38FB30040F9C4 /* FallinDots2.app */,
-				42D8A4C41AB38FB30040F9C4 /* FallinDots2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,10 +64,8 @@
 				42D8A4B21AB38FB30040F9C4 /* GameScene.sks */,
 				42D8A4B41AB38FB30040F9C4 /* GameScene.swift */,
 				42D8A4B61AB38FB30040F9C4 /* GameViewController.swift */,
-				42D8A4B81AB38FB30040F9C4 /* Main.storyboard */,
-				42D8A4BB1AB38FB30040F9C4 /* Images.xcassets */,
-				42D8A4BD1AB38FB30040F9C4 /* LaunchScreen.xib */,
 				42D8A4AE1AB38FB30040F9C4 /* Supporting Files */,
+				42564C7D1AB7BB7900728D86 /* Dot.swift */,
 			);
 			path = FallinDots2;
 			sourceTree = "<group>";
@@ -96,24 +73,10 @@
 		42D8A4AE1AB38FB30040F9C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42D8A4B81AB38FB30040F9C4 /* Main.storyboard */,
+				42D8A4BB1AB38FB30040F9C4 /* Images.xcassets */,
+				42D8A4BD1AB38FB30040F9C4 /* LaunchScreen.xib */,
 				42D8A4AF1AB38FB30040F9C4 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		42D8A4C71AB38FB30040F9C4 /* FallinDots2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				42D8A4CA1AB38FB30040F9C4 /* FallinDots2Tests.swift */,
-				42D8A4C81AB38FB30040F9C4 /* Supporting Files */,
-			);
-			path = FallinDots2Tests;
-			sourceTree = "<group>";
-		};
-		42D8A4C81AB38FB30040F9C4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				42D8A4C91AB38FB30040F9C4 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,24 +101,6 @@
 			productReference = 42D8A4AB1AB38FB30040F9C4 /* FallinDots2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42D8A4C31AB38FB30040F9C4 /* FallinDots2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42D8A4D11AB38FB30040F9C4 /* Build configuration list for PBXNativeTarget "FallinDots2Tests" */;
-			buildPhases = (
-				42D8A4C01AB38FB30040F9C4 /* Sources */,
-				42D8A4C11AB38FB30040F9C4 /* Frameworks */,
-				42D8A4C21AB38FB30040F9C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42D8A4C61AB38FB30040F9C4 /* PBXTargetDependency */,
-			);
-			name = FallinDots2Tests;
-			productName = FallinDots2Tests;
-			productReference = 42D8A4C41AB38FB30040F9C4 /* FallinDots2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,10 +112,7 @@
 				TargetAttributes = {
 					42D8A4AA1AB38FB30040F9C4 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					42D8A4C31AB38FB30040F9C4 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 42D8A4AA1AB38FB30040F9C4;
+						DevelopmentTeam = JN32HF46GV;
 					};
 				};
 			};
@@ -188,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				42D8A4AA1AB38FB30040F9C4 /* FallinDots2 */,
-				42D8A4C31AB38FB30040F9C4 /* FallinDots2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42D8A4C21AB38FB30040F9C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,26 +156,11 @@
 				42D8A4B51AB38FB30040F9C4 /* GameScene.swift in Sources */,
 				42D8A4B71AB38FB30040F9C4 /* GameViewController.swift in Sources */,
 				42D8A4B11AB38FB30040F9C4 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D8A4C01AB38FB30040F9C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D8A4CB1AB38FB30040F9C4 /* FallinDots2Tests.swift in Sources */,
+				42564C7E1AB7BB7900728D86 /* Dot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		42D8A4C61AB38FB30040F9C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42D8A4AA1AB38FB30040F9C4 /* FallinDots2 */;
-			targetProxy = 42D8A4C51AB38FB30040F9C4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		42D8A4B81AB38FB30040F9C4 /* Main.storyboard */ = {
@@ -346,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FallinDots2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,43 +276,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FallinDots2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		42D8A4D21AB38FB30040F9C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FallinDots2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallinDots2.app/FallinDots2";
-			};
-			name = Debug;
-		};
-		42D8A4D31AB38FB30040F9C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FallinDots2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallinDots2.app/FallinDots2";
 			};
 			name = Release;
 		};
@@ -415,14 +302,7 @@
 				42D8A4D01AB38FB30040F9C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		42D8A4D11AB38FB30040F9C4 /* Build configuration list for PBXNativeTarget "FallinDots2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42D8A4D21AB38FB30040F9C4 /* Debug */,
-				42D8A4D31AB38FB30040F9C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
