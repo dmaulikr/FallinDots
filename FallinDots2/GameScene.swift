@@ -59,6 +59,7 @@ class GameScene: SKScene {
     
     var isUiSetup: Bool = false
     var timer = NSTimer()
+    var dots:[Dot] = []
     let paddingSpace = 5
     
     override func didMoveToView(view: SKView) {
@@ -78,8 +79,32 @@ class GameScene: SKScene {
         }
     }
     
+    override func update(currentTime: NSTimeInterval) {
+        for dot in dots {
+            if dot.position.y < CGRectGetMinY(self.frame) {
+                println("Dot at the bottom")
+                dot.destroy()
+            }
+        }
+    }
+    
     func createDot() {
-        var newDot = Dot()
+        var dotPath: CGMutablePathRef = CGPathCreateMutable()
+        CGPathAddArc(dotPath, nil, 0, 0, 20, 0, CGFloat(M_PI)*2, true)
+//        var newDot: = SKShapeNode(path: dotPath)
+        var newDot = Dot(path: dotPath)
+        var size = 20
+        var randXPos = CGFloat(arc4random_uniform(UInt32(CGRectGetMinX(self.frame)) + UInt32(CGRectGetMaxX(self.frame))))
+        newDot.name = "DOT_NODE"
+        newDot.position = CGPointMake(randXPos, CGRectGetMaxY(self.frame) + 20 - CGFloat(paddingSpace))
+//        newDot.position = CGPointMake(CGRectGetMinX(self.frame) + 20 + CGFloat(paddingSpace), CGRectGetMaxY(self.frame) + 20 - CGFloat(paddingSpace))
+//        newDot.position = randomPosition(size)
+        newDot.fillColor = SKColor.whiteColor()
+        newDot.physicsBody = SKPhysicsBody(circleOfRadius: 20)
+        newDot.physicsBody!.mass = 0.75
+        newDot.physicsBody!.friction = 12.5
+        newDot.physicsBody!.affectedByGravity = true
+        dots.append(newDot)
         addChild(newDot)
     }
     
@@ -91,6 +116,11 @@ class GameScene: SKScene {
         scoreLabel.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         
         addChild(scoreLabel)
+    }
+    
+    func randomPosition(size:Int)->CGPoint {
+        var randXPos = CGFloat(arc4random_uniform(UInt32(CGRectGetMinX(self.frame))) + UInt32(CGRectGetMaxX(self.frame)))
+        return CGPointMake(randXPos, CGRectGetMaxY(self.frame) + CGFloat(size))
     }
     
 }
