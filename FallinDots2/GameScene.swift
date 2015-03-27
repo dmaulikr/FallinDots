@@ -60,6 +60,8 @@ class GameScene: SKScene {
     var isUiSetup: Bool = false
     var timer = NSTimer()
     var dots:[Dot] = []
+    var score:Int = 0
+    let scoreLabel:SKLabelNode = SKLabelNode()
     let paddingSpace = 5
     
     override func didMoveToView(view: SKView) {
@@ -80,23 +82,29 @@ class GameScene: SKScene {
     }
     
     override func update(currentTime: NSTimeInterval) {
-        for dot in dots {
+        updateScore()
+        for (index, dot) in enumerate(dots) {
             if dot.position.y < CGRectGetMinY(self.frame) {
                 println("Dot at the bottom")
                 dot.destroy()
+                dots.removeAtIndex(index)
+                score--
             }
         }
     }
     
+    func updateScore() {
+        scoreLabel.text = String(score)
+    }
+    
     func createDot() {
-        var dotPath: CGMutablePathRef = CGPathCreateMutable()
-        CGPathAddArc(dotPath, nil, 0, 0, 20, 0, CGFloat(M_PI)*2, true)
-//        var newDot: = SKShapeNode(path: dotPath)
-        var newDot = Dot(path: dotPath)
+//        var dotPath: CGMutablePathRef = CGPathCreateMutable()
+//        CGPathAddArc(dotPath, nil, 0, 0, 20, 0, CGFloat(M_PI)*2, true)
+        var newDot = Dot(circleOfRadius: 20)
         var size = 20
         var randXPos = CGFloat(arc4random_uniform(UInt32(CGRectGetMinX(self.frame)) + UInt32(CGRectGetMaxX(self.frame))))
         newDot.name = "DOT_NODE"
-        newDot.position = CGPointMake(randXPos, CGRectGetMaxY(self.frame) + 20 - CGFloat(paddingSpace))
+        newDot.position = CGPointMake(randXPos, CGRectGetMaxY(self.frame) + 20 + CGFloat(paddingSpace))
 //        newDot.position = CGPointMake(CGRectGetMinX(self.frame) + 20 + CGFloat(paddingSpace), CGRectGetMaxY(self.frame) + 20 - CGFloat(paddingSpace))
 //        newDot.position = randomPosition(size)
         newDot.fillColor = SKColor.whiteColor()
@@ -109,7 +117,7 @@ class GameScene: SKScene {
     }
     
     func setupUI() {
-        let scoreLabel = SKLabelNode(fontNamed: "Helvetica-Bold")
+        scoreLabel.fontName = "Helvetica-Bold"
         scoreLabel.color = SKColor(rgba: "#FFFFFF")
         scoreLabel.fontSize = 65
         scoreLabel.text = "0"
