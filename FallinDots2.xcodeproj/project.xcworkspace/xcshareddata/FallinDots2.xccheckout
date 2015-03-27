@@ -5,13 +5,21 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>4CCD645C-3190-449F-8F40-5AC3EF555DF1</string>
+=======
+	<string>69AEFAE4-4D86-4C2A-B54D-094E8EDBA1E9</string>
+>>>>>>> b7b4ee8e49610455be15770769fc59b8a9c37a33
 	<key>IDESourceControlProjectName</key>
 	<string>FallinDots2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CEA6336080F9DC434B1B784BE4E4D8C674546A38</key>
+<<<<<<< HEAD
 		<string>github.com:g33kidd/FallinDots.git</string>
+=======
+		<string>https://github.com/g33kidd/FallinDots</string>
+>>>>>>> b7b4ee8e49610455be15770769fc59b8a9c37a33
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FallinDots2.xcodeproj</string>
@@ -21,7 +29,11 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
+<<<<<<< HEAD
 	<string>github.com:g33kidd/FallinDots.git</string>
+=======
+	<string>https://github.com/g33kidd/FallinDots</string>
+>>>>>>> b7b4ee8e49610455be15770769fc59b8a9c37a33
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +46,11 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>CEA6336080F9DC434B1B784BE4E4D8C674546A38</string>
 			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
 			<string>FallinDots2</string>
+=======
+			<string>FallinDots</string>
+>>>>>>> b7b4ee8e49610455be15770769fc59b8a9c37a33
 		</dict>
 	</array>
 </dict>
