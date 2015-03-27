@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4CCD645C-3190-449F-8F40-5AC3EF555DF1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FallinDots2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEA6336080F9DC434B1B784BE4E4D8C674546A38</key>
+		<string>github.com:g33kidd/FallinDots.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FallinDots2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEA6336080F9DC434B1B784BE4E4D8C674546A38</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:g33kidd/FallinDots.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEA6336080F9DC434B1B784BE4E4D8C674546A38</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEA6336080F9DC434B1B784BE4E4D8C674546A38</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FallinDots2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
